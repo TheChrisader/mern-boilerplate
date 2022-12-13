@@ -1,5 +1,5 @@
 function App() {
-  return <div className="App">Pre-Commit Hook Check</div>;
+  return <div className="App">App</div>;
 }
 
 export default App;
