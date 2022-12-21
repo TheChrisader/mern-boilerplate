@@ -5,6 +5,7 @@ const { MONGO_URL } = config;
 
 const connectDB = async () => {
   try {
+    await mongoose.set("strictQuery", true);
     await mongoose.connect(MONGO_URL);
     console.log("DB is connected");
   } catch (err) {
